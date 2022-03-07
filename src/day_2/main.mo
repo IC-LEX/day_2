@@ -1,5 +1,8 @@
+import Nat8 "mo:base/Nat8";
 actor {
-  public func greet(name : Text) : async Text {
-    return "Hello, " # name # "!";
-  };
+
+public func nat8_to_nat(n : Nat8) : async Nat {
+  return(Nat8.toNat(n));
+};
+
 };
