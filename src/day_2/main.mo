@@ -1,4 +1,6 @@
 import Nat8 "mo:base/Nat8";
+import Text "mo:base/Text";
+import Debug "mo:base/Debug";
 actor {
 // Challenge 1 - nat_to_nat8
 
@@ -14,7 +16,11 @@ actor {
 
 
 // Challenge 3 - decimal_to_bits
-//  public func 
+  public func decimal_to_bits(n : Nat) : async Text {
+    let bits_rep : Text = "";
+    //Assuming fits in Nat8
+      return(n.size_in_bytes);
+  };
 
 
 // Challenge 4 - capitalize_character
