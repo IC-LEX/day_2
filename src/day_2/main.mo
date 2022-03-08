@@ -58,7 +58,7 @@ actor {
       var nat32_char = Char.toNat32(char);
       nat32_char :=  nat32_char - 32;
       let cap_char : Char = Char.fromNat32(nat32_char);
-      let cap_text : Text = cap_text # Char.toText(cap_char);
+      cap_text := cap_text # Char.toText(cap_char);
     };
     return cap_text;
   };
