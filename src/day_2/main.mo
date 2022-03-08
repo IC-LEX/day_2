@@ -68,7 +68,7 @@ actor {
   public func is_inside(t : Text, c : Char) : async Bool {
     for(char in t.chars()){
       if(Char.toNat32(char) == Char.toNat32(c)){
-        Debug.print(char);
+        Debug.print(Char.toText(char));
         return true;
       };
     };
