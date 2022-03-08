@@ -35,8 +35,8 @@ actor {
     return(Char.toText(char));
   };
   
-  private func character_to_unicode(c : Char) : Nat {
-    let unicode : Nat = Char.toNat(c); 
+  private func character_to_unicode(c : Char) : Nat32 {
+    let unicode : Nat32 = Char.toNat32(c); 
     return(unicode);
   };
 
