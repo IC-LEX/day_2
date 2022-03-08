@@ -41,7 +41,7 @@ actor {
   };
 
   public func capitalize_character(c : Char) : async Nat32{
-    if(Char.isAlpabetic(c)){
+    if(Char.isAlphabetic(c)){
       let unicode : Nat32 = character_to_unicode(c);
       return(unicode - 32);
     } else {
@@ -52,7 +52,16 @@ actor {
 
 
 // Challenge 5 - capitalize_text
-//  public func 
+  public func capitalize_text(t : Text) : async Text {
+    var cap_text : Text = "";
+    for(char in t.chars()){
+      var nat32_char = Char.toNat32(char);
+      nat32_char :=  nat32_char - 32;
+      let cap_char : Char = Char.fromNat32(nat32_char);
+      let cap_text #= Char.toText(cap_char);
+    };
+    return cap_text;
+  };
 
 
 
