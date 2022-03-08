@@ -28,7 +28,7 @@ actor {
   };
 
 // Challenge 4 - capitalize_character
-  public func capitalize_character( c : Char) : async Char{
+  public func capitalize_character( c : Char) : async Nat32{
     return(Char.toNat32(c));
   };
 
