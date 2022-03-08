@@ -29,11 +29,15 @@ actor {
   };
 
 // Challenge 4 - capitalize_character
-  public func capitalize_character( c : Nat32) : async Text{
-    var unicode_32 : Text = Nat32.toText(c + 32);
-    //unicode_32 := c) ;
-    return(unicode_32);
+  private func char_to_decimal(c: Char) : Nat{
+    return(Char.toNat(c));
   };
+  
+  //public func capitalize_character( c : Nat32) : async Text{
+  //  var unicode_32 : Text = Nat32.toText(c + 31);
+    //unicode_32 := c) ;
+  //  return(unicode_32);
+  //};
 
 
 // Challenge 5 - capitalize_text
