@@ -17,11 +17,11 @@ actor {
 // Challenge 3 - decimal_to_bits
   public func decimal_to_bits(n : Nat) : async Text {
     var bits_rep : Text = "";
-    var num : Nat = n; 
+    var rem: Nat = n; 
     // Repeatedly divide by 2 
     while(rem > 0){
       Debug.print(Nat.toText(rem));
-      //rem := rem/2;
+      rem := rem/2;
     };
     return(bits_rep);
   };
