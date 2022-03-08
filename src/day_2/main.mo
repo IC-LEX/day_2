@@ -121,6 +121,7 @@ actor {
 
 // Challenge 10 - bubble sort
   public func bubble_sort(array : [Nat]) : async [Nat]{
+    let array_mutable = Array.thaw<Nat>(array);
     var temp : Nat = 0;
     let size : Nat = array.size();
     for(i in Iter.range(1, size)){
@@ -132,5 +133,6 @@ actor {
         }
       }
     }
+  return(Array.freeze<Nat>(array));
   };
 };
