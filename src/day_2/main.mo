@@ -107,7 +107,7 @@ actor {
   public func size_in_bytes(t : Text) : async Nat {
   var size : Nat = 0;
    for(char in t.chars()){
-     size := size + 8;
+     size := +=size;
    };
   return size;
   };
