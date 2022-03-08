@@ -16,14 +16,13 @@ actor {
 
 
 // Challenge 3 - decimal_to_bits
-  public func decimal_to_bits(n : Nat8) : async Text {
-    let bits_rep : Text = "";
-    //Assuming Nat8
-    // Divide by ((8th power of 2) - 1) and distinguish the result and remainder
-    // Subtract the remainder from the total
-    // Divide by ((7th power of 2) - 1) and distinguish the result and remainder 
-    for(i in Iter.range(1, 8)){
-      Debug.print(i);
+  public func decimal_to_bits(n : Nat) : async Text {
+    var bits_rep : Text = "";
+    var rem : Nat = n; 
+    // Repeatedly divide by 2 and look for a remainder to decide bit
+    While(rem > 0){
+      bit_rep := Nat.toText(rem%2) # bits_rep;
+      rem := rem/2 
     };
     return(bits_rep);
   };
