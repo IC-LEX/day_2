@@ -30,10 +30,9 @@ actor {
 
 // Challenge 4 - capitalize_character
   public func capitalize_character( c : Char) : async Char{
-    var unicode_32 : Nat32 = Char.toNat32(c);
-    Debug.print(Nat32.toText(unicode_32));
-    //unicode_32 := unicode_32 + 32;
-    return(Text.toNat32(c));
+    var unicode_32 : Text = Nat32.toText(Char.toNat32(c) + 32);
+    //unicode_32 := c) ;
+    return(Text.toNat32(unicode_32));
   };
 
 
