@@ -83,8 +83,8 @@ actor {
       if(Char.toNat32(char) != 32){
         trimmed_text := trimmed_text # Char.toText(char);
         };
-      return trimmed_text;
-    };
+      };
+    return trimmed_text;
 };
 
 // Challenge 8 - duplicated_character
