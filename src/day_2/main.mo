@@ -32,7 +32,7 @@ actor {
   public func capitalize_character( c : Char) : async Char{
     var unicode_32 : Text = Nat32.toText(c + 32);
     //unicode_32 := c) ;
-    return(Text.toNat32(unicode_32));
+    return(unicode_32);
   };
 
 
