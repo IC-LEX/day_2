@@ -107,10 +107,16 @@ actor {
   public func size_in_bytes(t : Text) : async Nat {
   var size : Nat = 0;
    for(char in t.chars()){
-     size +=size;
+     size += 1;
    };
   return size;
   };
+
+  public func size_in_bytes_again(t : Text) : async Nat {
+  return (t.size()) ;
+  };
+
+
 
 
 // Challenge 10 - bubble sort
