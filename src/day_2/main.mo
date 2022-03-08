@@ -90,16 +90,12 @@ actor {
     };
 };
 
-
-
 // Challenge 8 - duplicated_character
 //  public func 
 
 
-
 // Challenge 9 - size_in_bytes
 //  public func 
-
 
 
 // Challenge 10 - bubble sort
