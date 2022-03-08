@@ -122,7 +122,7 @@ actor {
 // Challenge 10 - bubble sort
   public func bubble_sort(array : [Nat]) : async [Nat]{
     var temp : Nat;
-    let size = array.size();
+    let size : Nat = array.size();
     for(i in Iter.range(1, size)){
       for (j in Iter.range(0, size-1){
         if array[j]>array[j+1]{
