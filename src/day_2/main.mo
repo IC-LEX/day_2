@@ -2,6 +2,7 @@ import Nat8 "mo:base/Nat8";
 import Nat "mo:base/Nat";
 import Text "mo:base/Text";
 import Debug "mo:base/Debug";
+import Char "mo:base/Char";
 
 actor {
 // Challenge 1 - nat_to_nat8
@@ -26,13 +27,15 @@ actor {
     return(bits_rep);
   };
 
-
 // Challenge 4 - capitalize_character
-//  public func 
+  public func capitalize_character( c : Char) : async Char{
+    return(Char.capitalize_character(c));
+  };
 
 
 // Challenge 5 - capitalize_text
 //  public func 
+
 
 
 // Challenge 6 - is_inside
