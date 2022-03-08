@@ -40,10 +40,14 @@ actor {
     return(unicode);
   };
 
-
   public func capitalize_character(c : Char) : async Nat32{
-    let unicode : Nat32 = character_to_unicode(c);
-    return(unicode - 31);
+    if(Char.isAlpabetic(c)){
+      let unicode : Nat32 = character_to_unicode(c);
+      return(unicode - 32);
+    } else {
+      return (0);
+    };
+    
   };
 
 
