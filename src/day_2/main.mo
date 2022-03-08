@@ -20,7 +20,7 @@ actor {
     var rem: Nat = n; 
     // Repeatedly divide by 2 
     while(rem > 0){
-      bits_rep := Nat.toText(rem % 2) # bits_rep;
+      bits_rep := bits_rep # Nat.toText(rem % 2);
       rem := rem / 2;
     };
     return(bits_rep);
