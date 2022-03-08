@@ -30,7 +30,7 @@ actor {
 
 // Challenge 4 - capitalize_character
   private func char_to_decimal(c: Char) : Nat{
-    return(Char.toNat(c));
+    return(Char.toNat32(c));
   };
   
   //public func capitalize_character( c : Nat32) : async Text{
