@@ -1,5 +1,5 @@
 import Nat8 "mo:base/Nat8";
-import Nat8 "mo:base/Nat32";
+import Nat32 "mo:base/Nat32";
 import Nat "mo:base/Nat";
 import Text "mo:base/Text";
 import Debug "mo:base/Debug";
