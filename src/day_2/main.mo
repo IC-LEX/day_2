@@ -4,6 +4,8 @@ import Nat "mo:base/Nat";
 import Text "mo:base/Text";
 import Debug "mo:base/Debug";
 import Char "mo:base/Char";
+import Array "mo:base/Array";
+import Iter "mo:base/Iter";
 
 actor {
 // Challenge 1 - nat_to_nat8
@@ -117,8 +119,18 @@ actor {
   };
 
 
-
-
 // Challenge 10 - bubble sort
-//  public func 
+  public func bubble_sort(array : [Nat]) : async [Nat]{
+    var temp : Nat;
+    let size = array.size();
+    for(i in Iter.range(1, size)){
+      for (j in Iter.range(0, size-1){
+        if array[j]>array[j+1]{
+          temp := array[j];
+          array[j] := array[j+1];
+          array[j+1] := temp;
+        }
+      }
+    }
+  };
 };
