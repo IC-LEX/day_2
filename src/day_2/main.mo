@@ -22,10 +22,10 @@ actor {
     // Divide by ((8th power of 2) - 1) and distinguish the result and remainder
     // Subtract the remainder from the total
     // Divide by ((7th power of 2) - 1) and distinguish the result and remainder 
-    for(i in Iter.range(8, 0)){
+    for(i in Iter.range(1, 8)){
       Debug.print(i);
     };
-    return();
+    return(bits_rep);
   };
 
 
