@@ -19,8 +19,8 @@ actor {
     var bits_rep : Text = "";
     var num : Nat = n; 
     // Repeatedly divide by 2 
-    While(rem > 0){
-      
+    while(rem > 0){
+      Debug.print(Nat.toText(rem));
       //rem := rem/2;
     };
     return(bits_rep);
