@@ -2,6 +2,7 @@ import Nat8 "mo:base/Nat8";
 import Nat "mo:base/Nat";
 import Text "mo:base/Text";
 import Debug "mo:base/Debug";
+
 actor {
 // Challenge 1 - nat_to_nat8
   public func nat8_to_nat(n : Nat8) : async Nat {
@@ -16,11 +17,11 @@ actor {
 // Challenge 3 - decimal_to_bits
   public func decimal_to_bits(n : Nat) : async Text {
     var bits_rep : Text = "";
-    var rem : Nat = n; 
-    // Repeatedly divide by 2 and look for a remainder to decide bit
+    var num : Nat = n; 
+    // Repeatedly divide by 2 
     While(rem > 0){
       Debug.print(Nat.toText(rem % 2));
-      rem := rem/2;
+      //rem := rem/2;
     };
     return(bits_rep);
   };
