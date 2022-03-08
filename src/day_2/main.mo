@@ -29,11 +29,8 @@ actor {
   };
 
 // Challenge 4 - capitalize_character
-  public func char_to_decimal(c: Char) : async Nat32{
-    return(Char.toNat32(c));
-  };
-  
-  private func unicode_to_character(n: Nat32) : Char{
+   
+  public func unicode_to_character(n: Nat32) : async Char{
     let char : Char = Char.fromNat32(n); 
     return(char);
   };
