@@ -19,7 +19,7 @@ actor {
     var rem : Nat = n; 
     // Repeatedly divide by 2 and look for a remainder to decide bit
     While(rem > 0){
-      Debug.print(Nat.toText(rem % 2) # bits_rep);
+      Debug.print(Nat.toText(rem % 2));
       rem := rem/2;
     };
     return(bits_rep);
