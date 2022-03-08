@@ -29,7 +29,7 @@ actor {
 
 // Challenge 4 - capitalize_character
   public func capitalize_character( c : Char) : async Char{
-    var unicode_32 : nat32 = Char.toNat32(c);
+    var unicode_32 : Nat32 = Char.toNat32(c);
     unicode_32 := unicode_32 + 32;
     return(Nat32.toChar(unicode_32));
   };
