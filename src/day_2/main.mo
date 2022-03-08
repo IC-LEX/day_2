@@ -23,7 +23,7 @@ actor {
     // Subtract the remainder from the total
     // Divide by ((7th power of 2) - 1) and distinguish the result and remainder 
     for(i in Iter.range(8, 0)){
-      return(i);
+      Debug.print(i);
     };
     return();
   };
