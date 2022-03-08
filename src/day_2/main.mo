@@ -125,7 +125,7 @@ actor {
     var temp : Nat = 0;
     let size : Nat = array.size();
     for(i in Iter.range(0, size-1)){
-      for(j in Iter.range(1, size-2)){
+      for(j in Iter.range(1, size-1)){
         if(array_mutable[j] > array_mutable[j+1]){
           temp := array_mutable[j];
           array_mutable[j] := array_mutable[j+1];
