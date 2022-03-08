@@ -33,11 +33,15 @@ actor {
     return(Char.toNat32(c));
   };
   
-  //public func capitalize_character( c : Nat32) : async Text{
-  //  var unicode_32 : Text = Nat32.toText(c + 31);
-    //unicode_32 := c) ;
-  //  return(unicode_32);
-  //};
+  private func unicode_to_character(n: Nat32) : Text{
+    let char : Char = Char.fromNat32(n); 
+    return(Char.toText(char));
+  };
+  
+  public func capitalize_character(c : Char) : async Text{
+    var unicode_32 : Nat32 = char_to_decimal(c + 31);
+    return(Nat32.toText(unicode_32));
+  };
 
 
 // Challenge 5 - capitalize_text
