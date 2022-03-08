@@ -29,7 +29,7 @@ actor {
   };
 
 // Challenge 4 - capitalize_character
-  private func char_to_decimal(c: Char) : Nat{
+  private func char_to_decimal(c: Char) : Nat32{
     return(Char.toNat32(c));
   };
   
