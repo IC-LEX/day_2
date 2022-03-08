@@ -64,9 +64,15 @@ actor {
   };
 
 
-
 // Challenge 6 - is_inside
-//  public func 
+  public func is_inside(t : Text, c : Char) : async Bool {
+    for(char in t.chars()){
+      if(Char.toNat32(char) == c){
+        return true;
+      };
+    };
+    return false;
+  };
 
 
 
