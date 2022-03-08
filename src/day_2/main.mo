@@ -1,5 +1,5 @@
 import Nat8 "mo:base/Nat8";
-import Nat8 "mo:base/Nat";
+import Nat "mo:base/Nat";
 import Text "mo:base/Text";
 import Debug "mo:base/Debug";
 actor {
