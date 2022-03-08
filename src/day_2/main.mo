@@ -88,11 +88,29 @@ actor {
 };
 
 // Challenge 8 - duplicated_character
-//  public func 
+  //private func is_inside(t : Text, c : Char) : async Bool {
+  //  for(char in t.chars()){
+  //    if(Char.toNat32(char) == Char.toNat32(c)){
+  //      Debug.print(Char.toText(char));
+  //      return true;
+  //    };
+  //  };
+  //  return false;
+  //};
+  
+  public func duplicate_character(t : Text) : async Text{
+
+  }
 
 
 // Challenge 9 - size_in_bytes
-//  public func 
+  public func size_in_bytes(t : Text) : async Nat {
+  var size : Nat = 0;
+   for(char in t.chars()){
+     size := size + 8;
+   };
+  return size;
+  };
 
 
 // Challenge 10 - bubble sort
