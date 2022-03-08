@@ -22,7 +22,7 @@ actor {
     // Repeatedly divide by 2 and look for a remainder to decide bit
     While(rem > 0){
       bits_rep := Nat.toText(rem%2) # bits_rep;
-      rem := rem/2 
+      rem := rem/2;
     };
     return(bits_rep);
   };
