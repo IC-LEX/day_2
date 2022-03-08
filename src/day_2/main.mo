@@ -125,7 +125,7 @@ actor {
     let size : Nat = array.size();
     for(i in Iter.range(1, size)){
       for(j in Iter.range(0, size-1)){
-        if(array[j]>array[j+1]){
+        if(array[j] > array[j+1]){
           temp := array[j];
           array[j] := array[j+1];
           array[j+1] := temp;
