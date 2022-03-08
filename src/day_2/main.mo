@@ -33,7 +33,7 @@ actor {
     return(Char.toNat32(c));
   };
   
-  private func unicode_to_character(n: Nat32) : Text{
+  private func unicode_to_character(n: Nat32) : Char{
     let char : Char = Char.fromNat32(n); 
     return(Char.toText(char));
   };
