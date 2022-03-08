@@ -81,7 +81,8 @@ actor {
     var trimmed_text : Text = "";
     for(char in t.chars()){
       if(Char.toNat32(char) != 32){
-        trimmed_text := trimmed_text # char};
+        trimmed_text := trimmed_text # Char.toText(char);
+        };
       return trimmed_text;
     };
 };
