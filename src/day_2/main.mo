@@ -98,9 +98,9 @@ actor {
   //  return false;
   //};
   
-  public func duplicate_character(t : Text) : async Text{
+  //public func duplicate_character(t : Text) : async Text{
 
-  }
+  //};
 
 
 // Challenge 9 - size_in_bytes
