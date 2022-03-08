@@ -89,20 +89,27 @@ actor {
     return trimmed_text;
 };
 
-// Challenge 8 - duplicated_character
-  //private func is_inside(t : Text, c : Char) : async Bool {
-  //  for(char in t.chars()){
-  //    if(Char.toNat32(char) == Char.toNat32(c)){
-  //      Debug.print(Char.toText(char));
-  //      return true;
-  //    };
-  //  };
-  //  return false;
-  //};
+// Challenge 8 - duplicated_character - ran out of time
   
-  //public func duplicate_character(t : Text) : async Text{
+  // private func character_to_unicode(c : Char) : Nat32 {
+  //   let unicode : Nat32 = Char.toNat32(c); 
+  //   return(unicode);
+  // };
 
-  //};
+  
+  // private func is_inside(t : Text, c : Char) : async Bool {
+  //   for(char in t.chars()){
+  //     if(Char.toNat32(char) == Char.toNat32(c)){
+  //       Debug.print(Char.toText(char));
+  //       return true;
+  //     };
+  //   };
+  //   return false;
+  // };
+  
+  // public func duplicate_character(t : Text) : async Text{
+  //   //
+  // };
 
 
 // Challenge 9 - size_in_bytes
