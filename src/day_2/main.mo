@@ -78,7 +78,7 @@ actor {
 
 // Challenge 7 - trim_whitespace
   public func trim_whitespace(t : Text) : async Text {
-    var trimmed_text : Text = ""
+    var trimmed_text : Text = "";
     for(char in t.chars()){
       if(Char.toNat32(char) != 32){
         trimmed_text = trim_text # char}
