@@ -33,7 +33,7 @@ actor {
     var unicode_32 : Nat32 = Char.toNat32(c);
     Debug.print(unicode_32);
     unicode_32 := unicode_32 + 32;
-    return(Nat32.toText(unicode_32));
+    
   };
 
 
